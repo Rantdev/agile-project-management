@@ -117,6 +117,17 @@ A full-stack Agile Project Management application for small teams to manage proj
 | React Hot Toast | 2.4.1 | Notifications |
 | React Icons | 5.0.1 | Icons |
 | Vite | 5.0.8 | Build tool |
+### Frontend
+- **React 18** with JavaScript/JSX
+- React Router DOM for navigation
+- Axios for API integration
+- Tailwind CSS for styling
+- Vite as build tool
+
+### Or more accurately:
+- **Language**: JavaScript (ES6+)
+- **Framework**: React 18
+- **File Syntax**: JSX (JavaScript XML)
 
 ### Backend
 | Technology | Version | Purpose |
