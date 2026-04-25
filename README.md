@@ -6,7 +6,7 @@
 [![SQLite Version](https://img.shields.io/badge/sqlite-5.1.6-blue)](https://www.sqlite.org/)
 
 A full-stack Agile Project Management application for small teams to manage projects, user stories, tasks, and team collaboration efficiently.
-
+Video link :- https://www.veed.io/view/3925a6ff-1a12-49b1-9678-248255e81319?source=editor&panel=share
 ## 📋 Table of Contents
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
