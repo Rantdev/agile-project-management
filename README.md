@@ -203,35 +203,37 @@ A full-stack Agile Project Management application for small teams to manage proj
 | Nodemailer | 6.9.7 | Email service |
 | node-cron | 3.0.3 | Scheduled jobs |
 
-## 📁 Project Structure
+## 📂 Project Structure
+
+```bash
 agile-project-management/
 │
-├── server/                          # Backend application
-│   ├── config/                      # Configuration files
+├── server/                         # Backend application
+│   ├── config/
 │   │   ├── db.js                   # Database connection
 │   │   └── env.js                  # Environment validation
 │   │
-│   ├── controllers/                 # Business logic
-│   │   ├── authController.js       # Authentication (login, register, JWT, Google)
+│   ├── controllers/
+│   │   ├── authController.js       # Authentication logic
 │   │   ├── projectController.js    # Project CRUD operations
 │   │   ├── storyController.js      # Story management
 │   │   ├── taskController.js       # Task management
 │   │   ├── teamController.js       # Team member management
 │   │   ├── chatController.js       # Real-time chat
-│   │   ├── performanceController.js # Analytics & reports
+│   │   ├── performanceController.js# Analytics & reports
 │   │   ├── profileController.js    # User profile management
 │   │   ├── emailController.js      # Email notifications
 │   │   └── otpController.js        # OTP verification
 │   │
-│   ├── middleware/                  # Express middleware
+│   ├── middleware/
 │   │   ├── auth.js                 # JWT verification
 │   │   ├── errorHandler.js         # Global error handling
 │   │   └── validation.js           # Input validation
 │   │
-│   ├── models/                      # Database models
+│   ├── models/
 │   │   └── initDB.js               # Database schema initialization
 │   │
-│   ├── routes/                      # API routes
+│   ├── routes/
 │   │   ├── authRoutes.js           # Authentication endpoints
 │   │   ├── projectRoutes.js        # Project endpoints
 │   │   ├── storyRoutes.js          # Story endpoints
@@ -242,115 +244,116 @@ agile-project-management/
 │   │   ├── profileRoutes.js        # Profile endpoints
 │   │   └── otpRoutes.js            # OTP endpoints
 │   │
-│   ├── jobs/                        # Scheduled jobs
+│   ├── jobs/
 │   │   └── reminderJob.js          # Daily overdue task reminder
 │   │
-│   ├── .env                         # Environment variables (not pushed)
-│   ├── .env.example                 # Example environment variables
-│   ├── package.json                 # Dependencies
-│   ├── package-lock.json            # Lock file
-│   ├── app.js                       # Express app configuration
-│   └── server.js                    # Server entry point
+│   ├── .env                        # Environment variables
+│   ├── .env.example                # Example environment variables
+│   ├── package.json                # Dependencies
+│   ├── package-lock.json           # Lock file
+│   ├── app.js                      # Express app configuration
+│   └── server.js                   # Server entry point
 │
-├── client/                          # Frontend application
-│   ├── public/                      # Static files
-│   │   └── vite.svg                # Vite logo
+├── client/                         # Frontend application
+│   ├── public/
+│   │   └── vite.svg
 │   │
-│   ├── src/                         # Source code
-│   │   ├── assets/                 # Images, fonts, etc.
+│   ├── src/
+│   │   ├── assets/
 │   │   │   └── logo.svg
 │   │   │
-│   │   ├── components/             # Reusable components
-│   │   │   ├── Layout/            # Layout components
-│   │   │   │   ├── Sidebar.jsx    # Navigation sidebar
-│   │   │   │   ├── Navbar.jsx     # Top navigation bar
-│   │   │   │   └── ProtectedRoute.jsx # Route guard
+│   │   ├── components/
+│   │   │   ├── Layout/
+│   │   │   │   ├── Sidebar.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ProtectedRoute.jsx
 │   │   │   │
-│   │   │   ├── Projects/           # Project components
-│   │   │   │   ├── ProjectCard.jsx # Project card display
-│   │   │   │   └── ProjectModal.jsx # Create/Edit modal
+│   │   │   ├── Projects/
+│   │   │   │   ├── ProjectCard.jsx
+│   │   │   │   └── ProjectModal.jsx
 │   │   │   │
-│   │   │   ├── Stories/            # Story components
-│   │   │   │   ├── StoryCard.jsx  # Story card display
-│   │   │   │   └── StoryModal.jsx # Create/Edit modal
+│   │   │   ├── Stories/
+│   │   │   │   ├── StoryCard.jsx
+│   │   │   │   └── StoryModal.jsx
 │   │   │   │
-│   │   │   ├── Tasks/              # Task components
-│   │   │   │   ├── TaskCard.jsx   # Task card display
-│   │   │   │   ├── TaskBoard.jsx  # Kanban board
-│   │   │   │   └── TaskModal.jsx  # Create/Edit modal
+│   │   │   ├── Tasks/
+│   │   │   │   ├── TaskCard.jsx
+│   │   │   │   ├── TaskBoard.jsx
+│   │   │   │   └── TaskModal.jsx
 │   │   │   │
-│   │   │   ├── Chat/               # Chat components
-│   │   │   │   ├── ChatBox.jsx    # Real-time chat box
-│   │   │   │   └── ChatMessage.jsx # Individual message
+│   │   │   ├── Chat/
+│   │   │   │   ├── ChatBox.jsx
+│   │   │   │   └── ChatMessage.jsx
 │   │   │   │
-│   │   │   ├── Performance/        # Performance components
-│   │   │   │   ├── StatsCard.jsx  # Statistics card
-│   │   │   │   ├── TaskChart.jsx  # Chart component
-│   │   │   │   └── Leaderboard.jsx # Top performers
+│   │   │   ├── Performance/
+│   │   │   │   ├── StatsCard.jsx
+│   │   │   │   ├── TaskChart.jsx
+│   │   │   │   └── Leaderboard.jsx
 │   │   │   │
-│   │   │   └── Common/             # Common components
-│   │   │       ├── LoadingSpinner.jsx # Loading indicator
-│   │   │       ├── ConfirmDialog.jsx   # Confirmation modal
-│   │   │       └── Toast.jsx           # Notification toast
+│   │   │   └── Common/
+│   │   │       ├── LoadingSpinner.jsx
+│   │   │       ├── ConfirmDialog.jsx
+│   │   │       └── Toast.jsx
 │   │   │
-│   │   ├── pages/                   # Page components
-│   │   │   ├── Login.jsx           # Login page
-│   │   │   ├── Register.jsx        # Registration page
-│   │   │   ├── OTPVerification.jsx # OTP verification page
-│   │   │   ├── Dashboard.jsx       # User dashboard
-│   │   │   ├── Projects.jsx        # Projects listing
-│   │   │   ├── ProjectDetails.jsx  # Single project view
-│   │   │   ├── StoryTasks.jsx      # Story tasks view
-│   │   │   ├── MyTasks.jsx         # User's assigned tasks
-│   │   │   ├── Team.jsx            # Team management
-│   │   │   ├── Performance.jsx     # Analytics dashboard
-│   │   │   ├── Profile.jsx         # User profile
-│   │   │   └── RoleSetup.jsx       # Initial role setup
+│   │   ├── pages/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── OTPVerification.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Projects.jsx
+│   │   │   ├── ProjectDetails.jsx
+│   │   │   ├── StoryTasks.jsx
+│   │   │   ├── MyTasks.jsx
+│   │   │   ├── Team.jsx
+│   │   │   ├── Performance.jsx
+│   │   │   ├── Profile.jsx
+│   │   │   └── RoleSetup.jsx
 │   │   │
-│   │   ├── context/                 # React context
-│   │   │   └── AuthContext.jsx     # Authentication state
+│   │   ├── context/
+│   │   │   └── AuthContext.jsx
 │   │   │
-│   │   ├── hooks/                   # Custom hooks
-│   │   │   ├── useAuth.js          # Auth hook
-│   │   │   ├── useToast.js         # Toast notification hook
-│   │   │   └── useLocalStorage.js  # Local storage hook
+│   │   ├── hooks/
+│   │   │   ├── useAuth.js
+│   │   │   ├── useToast.js
+│   │   │   └── useLocalStorage.js
 │   │   │
-│   │   ├── services/               # API services
-│   │   │   └── api.js             # Axios configuration
+│   │   ├── services/
+│   │   │   └── api.js
 │   │   │
-│   │   ├── utils/                  # Utility functions
-│   │   │   ├── constants.js       # App constants
-│   │   │   ├── helpers.js         # Helper functions
-│   │   │   └── validators.js      # Form validation
+│   │   ├── utils/
+│   │   │   ├── constants.js
+│   │   │   ├── helpers.js
+│   │   │   └── validators.js
 │   │   │
-│   │   ├── styles/                 # Styles
-│   │   │   └── global.css         # Global styles
+│   │   ├── styles/
+│   │   │   └── global.css
 │   │   │
-│   │   ├── App.jsx                 # Main app component
-│   │   ├── main.jsx                # Entry point
-│   │   └── index.css               # Tailwind CSS
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
 │   │
-│   ├── .env                         # Environment variables (not pushed)
-│   ├── .env.example                 # Example environment variables
-│   ├── index.html                   # HTML template
-│   ├── package.json                 # Dependencies
-│   ├── package-lock.json            # Lock file
-│   ├── tailwind.config.js          # Tailwind configuration
-│   ├── postcss.config.js           # PostCSS configuration
-│   └── vite.config.js              # Vite configuration
+│   ├── .env
+│   ├── .env.example
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   └── vite.config.js
 │
-├── database/                        # SQLite database
-│   └── agile.db                    # Database file (not pushed)
+├── database/
+│   └── agile.db                   # SQLite database
 │
-├── docs/                            # Documentation
-│   ├── api-docs.md                 # API documentation
-│   ├── architecture.md             # Architecture documentation
-│   └── schema.md                   # Database schema documentation
+├── docs/
+│   ├── api-docs.md                # API documentation
+│   ├── architecture.md            # Architecture docs
+│   └── schema.md                  # Database schema
 │
-├── .gitignore                       # Git ignore file
-├── README.md                        # Project documentation
-├── LICENSE                          # MIT License
-└── package.json                     # Root package.json (optional)
+├── .gitignore
+├── README.md
+├── LICENSE
+└── package.json
+```
 
 ## 🗄️ Database Schema
 
