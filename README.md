@@ -6,7 +6,70 @@
 [![SQLite Version](https://img.shields.io/badge/sqlite-5.1.6-blue)](https://www.sqlite.org/)
 
 A full-stack Agile Project Management application for small teams to manage projects, user stories, tasks, and team collaboration efficiently.
-Video link :- https://www.veed.io/view/3925a6ff-1a12-49b1-9678-248255e81319?source=editor&panel=share
+
+## 🚀 Live Demo
+
+### 🌐 Website URL
+**[https://agile-project-management-code-review-1.onrender.com](https://agile-project-management-code-review-1.onrender.com)**
+
+---
+
+## 🔐 Demo Credentials
+
+### Test Account (Use this to login)
+
+| Field | Value |
+|-------|-------|
+| **Email** | `rantdev9179@gmail.com` |
+| **Password** | `123456` |
+
+> ⚠️ **Note:** If you face any login issues, please register a new account. Registration is quick and easy!
+
+---
+
+## 🎥 Demo Video
+
+**[▶️ Click here to watch the demo video](https://www.veed.io/view/3925a6ff-1a12-49b1-9678-248255e81319?source=editor&panel=share)**
+
+### What's in the video:
+- Login with demo credentials
+- Create projects, stories, and tasks
+- Team management and chat
+- Performance analytics
+
+---
+
+## 📱 Quick Start
+
+1. **Go to:** https://agile-project-management-code-review-1.onrender.com
+2. **Use credentials:** `rantdev9179@gmail.com` / `123456`
+3. **Or register** a new account
+4. **Start exploring** the features!
+
+---
+
+## ❓ Having Trouble Logging In?
+
+### Option 1: Register a New Account
+1. Click "Create Account" on the login page
+2. Enter your name, email, and password
+3. Complete the OTP verification
+4. Login with your new credentials
+
+### Option 2: Use Google Login
+- Click "Sign in with Google"
+- Use your Google account
+
+---
+
+## 📞 Support
+
+- **Email:** rantdev9179@gmail.com
+- **GitHub Issues:** [Create issue](https://github.com/Rantdev/agile-project-management/issues)
+
+---
+
+**Thank you for checking out AgileFlow! 🚀**
 ## 📋 Table of Contents
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
