@@ -43,7 +43,7 @@ A full-stack Agile Project Management application for small teams to manage proj
 ## 📱 Quick Start
 
 1. **Go to:** https://agile-project-management-code-review-1.onrender.com
-2. **Use credentials:** `rantdev9179@gmail.com` / `123456`
+2. **Use credentials:** `rantdev0@gmail.com` / `123456`
 3. **Or register** a new account
 4. **Start exploring** the features!
 
