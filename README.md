@@ -20,6 +20,7 @@ A full-stack Agile Project Management application for small teams to manage proj
 
 | Field | Value |
 |-------|-------|
+| **Email** | `rantdev0@gmail.com` |
 | **Email** | `rantdev9179@gmail.com` |
 | **Password** | `123456` |
 
@@ -64,7 +65,7 @@ A full-stack Agile Project Management application for small teams to manage proj
 
 ## 📞 Support
 
-- **Email:** rantdev9179@gmail.com
+- **Email:** rantdev0@gmail.com
 - **GitHub Issues:** [Create issue](https://github.com/Rantdev/agile-project-management/issues)
 
 ---
